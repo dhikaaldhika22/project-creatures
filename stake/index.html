@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Creatures | Stack Now</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../assets/img/logo.png" alt="logo">
+            <p>0x123...4567</p>
+        </div>
+
+        <div class="box">
+            <div class="wallet">
+                <p style="margin-right: auto">$ONYX BALANCE:</p>
+                <p>$ONYX REWARDS:</p>
+            </div>
+            <div class="row">
+                <div class="column" @checked(false)>
+
+                </div>
+                <div class="column">
+
+                </div>
+            </div>
+            <div class="buttons">
+                <a href=""><button>STAKE</button></a>
+                <a href=""><button>CLAIM REWARDS</button></a>
+                <a href=""><button>UNSTAKE & CLAIM ALL</button></a>
+            </div>
+        </div>
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Work+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    @font-face {
+        font-family: 'bahnschrift';
+        src: url(../assets/fonts/BAHNSCHRIFT.TTF);
+    }
+    
+    .container {
+        background-image: url(../assets/img/background-screen-labs.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        color: white;
+    }
+    
+    .header {
+        display: flex;
+        padding: 3rem 0.0rem;
+        justify-content: center;
+    }
+    
+    .header img {
+        display: flex;
+        width: 200px;
+        margin-right: auto;
+        margin-left: 5rem;
+    }
+    
+    .header p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 12px 70px 12px 24px;
+        gap: 24px;
+        background: #2D2D2D;
+        border-radius: 0px 0px 0px 20px;
+        margin-left: auto;
+    }
+    
+    .box {
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: 80%;
+        height: 80vh;
+        background: #0E0E0E;
+        border-width: 18px 18px 0px 18px;
+        border-style: solid;
+        border-color: #000000;
+        border-radius: 40px 40px 0px 0px;
+    }
+    
+    .box .wallet {
+        display: flex;
+        justify-content: center;
+        padding: 3rem 12rem;
+        font-size: 24px;
+        font-family: 'bahnschrift';
+    }
+    
+    .row .column {
+        float: left;
+        width: 8%;
+        height: 100px;
+        padding: 0 10px 0px 0px;
+        margin-left: 10px;
+        background-image: url(../assets/img/data-1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    
+    .box .row {
+        margin: 0 100px 0 100px;
+    }
+    
+    .box .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /* this adds the "card" effect */
+        padding: 16px;
+        text-align: center;
+    }
+    
+    .buttons a button {
+        font-family: 'bahnschrift';
+        width: 15%;
+        padding: 15px 10px 10px 10px;
+        margin-left: 2rem;
+        margin-top: 23%;
+        background: #B4B4B4;
+        color: black;
+        border-radius: 12px;
+        border-color: transparent;
+        cursor: pointer;
+        transition-duration: 0.4s;
+    }
+    
+    .buttons button:hover {
+        border: 2px solid #FFFFFF;
+        background-color: transparent;
+        color: white;
+        transition-duration: 0.4s;
+    }
+    /* Responsive columns - one column layout (vertical) on small screens */
+    
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+</style>
+
+</html>
