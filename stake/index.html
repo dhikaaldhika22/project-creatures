@@ -5,35 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/35ff2c25d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Project Creatures | Stack Now</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="header">
-            <img src="../assets/img/logo.png" alt="logo">
-            <p>0x123...4567</p>
-        </div>
-
-        <div class="box">
-            <div class="wallet">
-                <p style="margin-right: auto">$ONYX BALANCE:</p>
-                <p>$ONYX REWARDS:</p>
+        <header>
+            <div class="logo-container">
+                <img src="../assets/img/logo-head.png" alt="" class="logo" />
             </div>
-            <div class="row">
-                <div class="column" @checked(false)>
+            <div class="wallet-container">
+                <a href="#" class="wallet">
+                    <i class="fa-solid fa-wallet"></i>CONNECT
+                    <div class="garis"></div>
+                </a>
+            </div>
+       </header>
 
+       <main>
+            <div class="screen">
+                <div class="status">
+                    <div class="status-item">
+                        <h2>$ONYX BALANCE:</h2>
+                    </div>
+                    <div class="status-item">
+                        <h2>$ONYX REWARDS:</h2>
+                    </div>
                 </div>
-                <div class="column">
-
+                <div class="nft">
+                    <!-- Card NFT items, you can do loop in this div -->
+                    <div class="item"><a href=""></a><img src="../assets/img/data-1.jpg" alt="" /></a></div>
+                    <!-- you can do conditional state in div 'item' -->
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                    <div class="item"><a href="">NFT + Token ID</a></div>
+                </div>
+                <div class="footer">
+                    <button>STAKE</button>
+                    <button>CLAIM REWARDS</button>
+                    <button>UNSTAKE & CLAIM ALL</button>
                 </div>
             </div>
-            <div class="buttons">
-                <a href=""><button>STAKE</button></a>
-                <a href=""><button>CLAIM REWARDS</button></a>
-                <a href=""><button>UNSTAKE & CLAIM ALL</button></a>
-            </div>
-        </div>
+       </main>
+       
 </body>
 
 <style>
@@ -50,122 +88,194 @@
         src: url(../assets/fonts/BAHNSCHRIFT.TTF);
     }
     
+
+
     .container {
         background-image: url(../assets/img/background-screen-labs.jpg);
-        width: 100%;
-        height: 100vh;
+        background-repeat: repeat-y;
+        max-width: 100vw;
+        max-height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
         text-align: center;
         color: white;
+        overflow-y: hidden;
     }
-    
-    .header {
+    header{
         display: flex;
-        padding: 3rem 0.0rem;
-        justify-content: center;
-    }
-    
-    .header img {
-        display: flex;
-        width: 200px;
-        margin-right: auto;
-        margin-left: 5rem;
-    }
-    
-    .header p {
-        display: flex;
-        flex-direction: row;
+        width: 100%;
+        height: 20vh;
+        justify-content: space-between;
         align-items: center;
-        padding: 12px 70px 12px 24px;
-        gap: 24px;
-        background: #2D2D2D;
+    }
+    .logo-container{
+        width: 20%;
+        display: flex;
+        justify-content: end;
+    }
+    .logo{
+        width: 75%;
+        
+    }
+    .wallet-container{
+        width: 15%;
+        display: flex;
+        justify-content: end;
+    }
+    .wallet{
+        background-color: #1a1a1a;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        height: 6vh;
         border-radius: 0px 0px 0px 20px;
-        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+    }
+    .garis{
+        color: white;
+        border: 1px white solid;
+        width: 30%;
     }
     
-    .box {
-        box-sizing: border-box;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        text-align: center;
-        width: 80%;
-        height: 80vh;
-        background: #0E0E0E;
-        border-width: 18px 18px 0px 18px;
-        border-style: solid;
-        border-color: #000000;
-        border-radius: 40px 40px 0px 0px;
-    }
-    
-    .box .wallet {
+    main{
+        width: 100vw;
         display: flex;
         justify-content: center;
-        padding: 2rem 12rem 5rem;
-        font-size: 24px;
-        font-family: 'bahnschrift';
     }
-    
-    .row .column {
-        float: left;
+    .screen{
+        width: 90%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #0e0e0e;
+        border: 18px solid black;
+        border-radius: 18px;
+        /* overflow-y: scroll; */
+    }
+    .status{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .status h2{
+        font-size: 3vh;
+    }
+    .nft{
+        height: 70%;
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 6%;
+        gap: 5px;
+    }
+    .item{
         width: 8%;
-        height: 100px;
-        padding: 0 10px 0px 0px;
-        margin-left: 10px;
-        background-image: url(../assets/img/data-1.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        cursor: pointer;
+        background-color: #2D2D2D;
+        aspect-ratio: 3/2;
+        display: flex;
+        align-items: center;
     }
-    
-    .box .row {
-        margin: 0 100px 0 100px;
-    }
-    
-    .box .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        /* this adds the "card" effect */
-        padding: 16px;
-        text-align: center;
-    }
-    
-    .buttons a button {
-        font-family: 'bahnschrift';
-        width: 15%;
-        padding: 15px 10px 10px 10px;
-        margin-left: 2rem;
-        margin-top: 23%;
-        background: #B4B4B4;
-        color: black;
-        border-radius: 12px;
-        border-color: transparent;
-        cursor: pointer;
-        transition-duration: 0.4s;
-    }
-    
-    .buttons button:hover {
-        border: 2px solid #FFFFFF;
-        background-color: transparent;
+    .item a{
+        text-decoration: none;
         color: white;
-        transition-duration: 0.4s;
     }
-    /* Responsive columns - one column layout (vertical) on small screens */
-    
-    @media screen and (max-width: 600px) {
-        .column {
+    .item img{
+        width: 100%;
+        height: 100%;
+    }
+    .footer{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        z-index: 1;
+    }
+    .footer button{
+        width: 15%;
+        height: 40%;
+        background-color: #B4B4B4;
+        columns: black;
+        border: none;
+        border-radius: 12px;
+        font-size: 2vh;
+        font-weight: 600;
+    }
+    .footer button:hover{
+        color: white;
+        background-color: grey;
+        transition: all 0.3s;
+    }
+
+    @media screen and (max-width: 1023px) {
+        .screen{
+            border: 14px solid black;
+        }
+        .logo-container{
+            width: 68%;
+        }
+        .wallet-container{
+            width: 25%;
+        }
+        
+        
+    }
+
+    @media screen and (max-width: 425px) {
+        .logo-container{
+            width: 68%;
+        }
+        .logo{
+            width: 50%;
+        }
+        .wallet-container{
+            width: 20%;
+            justify-content: end;
+        }
+        .wallet{
             width: 100%;
-            display: block;
-            margin-bottom: 20px;
+            display: flex;
+            justify-content: end;
+            font-size: 8px;
+        }
+        .garis{
+            width: 5px;
+        }
+        .screen{
+            border: 8px solid black;
+            overflow-y: scroll;
+            background-color: #212129;
+        }
+        .status-item{
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+        }
+        .item{
+            width: 23%;
+            height: 25%;
+            background-color: transparent;
+            border: 1px solid white;
+        }
+        .footer{
+            flex-wrap: wrap;
+            position: absolute;
+            bottom: 20px;
+            width: 90%;
+        }
+        .footer button{
+            width: 35%;
         }
     }
+
+   
 </style>
 
 </html>

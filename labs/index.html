@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/35ff2c25d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Project Creatures | Labs</title>
 </head>
 
@@ -14,8 +16,11 @@
             <div class="logo-container">
                 <img src="../assets/img/logo.png" alt="logo">
             </div>
-            <div class="data-container">
-                <p>0x123...4567</p>
+            <div class="wallet-container">
+                <a href="#" class="wallet">
+                    <i class="fa-solid fa-wallet"></i>CONNECT
+                    <div class="garis"></div>
+                </a>
             </div>
         </header>
 
@@ -83,6 +88,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
         height: 20vh;
     }
     .logo-container{
@@ -91,23 +97,38 @@
         justify-content: end;
     }
     .data-container{
-        width: 130px;
+        width: 15%;
+        display: flex;
+        justify-content: end;
     }
     
     header img {
         width: 75%;
     }
     
-    header p {
+    .wallet-container{
+        width: 15%;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 12px 40px 12px 30px;
-        gap: 24px;
-        background: #2D2D2D;
-        border-radius: 0px 0px 0px 20px;
+        justify-content: end;
     }
-    
+    .wallet{
+        background-color: #1a1a1a;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        height: 6vh;
+        border-radius: 0px 0px 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+    }
+    .garis{
+        color: white;
+        border: 1px white solid;
+        width: 30%;
+    }
+        
     main{
         display: flex;
         flex-direction: row;
@@ -176,6 +197,9 @@
         .logo-container{
             width: 68%;
         }
+        .wallet-container{
+            width: 25%;
+        }
         header{
             height: 15vh;
         }
@@ -227,26 +251,38 @@
             
         }
         footer img{
-            width: 33%;
+            width: 30%;
         }
     }
 
     @media screen and (max-width: 425px) {
-        .data-container{
-            width: 90px;
+        .logo-container{
+            width: 68%;
+        }
+        .wallet-container{
+            width: 25%;
+            justify-content: end;
+        }
+        .wallet{
+            width: 100%;
+            display: flex;
+            justify-content: end;
             font-size: 10px;
+        }
+        .garis{
+            width: 5px;
         }
         .image-section{
             margin-bottom: 20px;
         }
        .img-hero{
-            width: 70%;
+            width: 60%;
        }
        .para{
             font-size: 11px;
        }
        .btn-group{
-            row-gap: 20px;
+            row-gap: 17px;
        }
        .btn{
             padding: 10px;
@@ -255,36 +291,7 @@
             height: 18vh;
        }
     }
-    @media screen and (max-height: 700px) {
-        .img-hero{
-            width: 40%;
-        }
-        .btn-group{
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            row-gap: 10px;
-            z-index: 2;   
-        }
-        .btn{
-            width: 100%;
-            height: 100%;
-            padding: 10px;
-            border: 1px solid white;
-            font-size: 15px;
-        }
-        footer{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            position: absolute;
-            bottom: 0px;
-            z-index: 1;            
-        }
-        footer img{
-            width: 30%;
-        }       
-    }
+   
 </style>
 
 </html>
