@@ -10,26 +10,42 @@
 
 <body>
     <div class="container">
-        <div class="header">
-            <img src="../assets/img/logo.png" alt="logo">
-            <p>0x123...4567</p>
-        </div>
-
-        <div class="section">
-            <h1>STAKE YOUR<br>WEIRD CREATURES NFT GET $ONYX REWARDS</h1>
-            <p>Stake your Creatures NFT to earn $ONYX daily. <br> Weird Creatures with companion traits yield 4 $ONYX per day, Weird Creatures without companion traits yield 2 $ONYX per day.</p>
-            <p>Stake as much as possible! Rewards awaits you!</p>
-            <a href="../stake/index.html"><button type="button">STAKE NOW</button></a>
-            <a href=""><button style="margin-right: 61%">BUY ON OPENSEA</button></a>
-            <div class="image-section">
-                <img src="../assets/img/image-labs.png" alt="" style="width: 30%; display: flex; margin-left: auto; margin-top: -30%; margin-right: 8%; ">
+        <header>
+            <div class="logo-container">
+                <img src="../assets/img/logo.png" alt="logo">
             </div>
-        </div>
-        <div class="weird-creatures-nft">
-            <img src="../assets/img/weird-creatures-1.png">
-            <img src="../assets/img/weird-creatures-2.png">
-            <img src="../assets/img/weird-creatures-3.png">
-        </div>
+            <div class="data-container">
+                <p>0x123...4567</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero-section">
+                <div class="title">
+                    <h1>STAKE YOUR</h1>
+                    <h1>WEIRD CREATURES NFT</h1>
+                    <h1>GET $ONYX REWARDS</h1>
+                </div>
+                <div class="para">
+                    <p>Stake your Creatures NFT to earn $ONYX daily.</p>
+                    <p>Every Weird Creatures with companion traits yield 4 $ONYX per day,</p>
+                    <p>Weird Creatures without companion traits yield 2 $ONYX per day.</p></br>
+                    <p>Stake as much as possible! Rewards awaits you!</p>
+                </div>
+                <div class="btn-group">
+                    <a href="../stake/index.html"><button class="btn">STAKE NOW</button></a>
+                    <a href="#"><button class="btn">BUY ON OPENSEA</button></a>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/image-labs.png" alt="" class="img-hero">
+            </div>
+        </main>
+        <footer>
+            <img src="../assets/img/weird-creatures-1.png" alt="" />
+            <img src="../assets/img/weird-creatures-2.png" alt="" />
+            <img src="../assets/img/weird-creatures-3.png" alt="" />
+        </footer>
     </div>
 </body>
 
@@ -55,87 +71,172 @@
     
     .container {
         background-image: url(../assets/img/background-screen-labs.jpg);
-        width: 100%;
+        max-width: 100vw;
         height: 100vh;
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         text-align: center;
         color: white;
     }
     
-    .header {
+    header {
         display: flex;
-        padding: 3rem 0.0rem;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        height: 20vh;
+    }
+    .logo-container{
+        width: 20%;
+        display: flex;
+        justify-content: end;
+    }
+    .data-container{
+        width: 20%;
     }
     
-    .header img {
-        display: flex;
-        width: 200px;
-        margin-right: auto;
-        margin-left: 5rem;
+    header img {
+        width: 75%;
     }
     
-    .header p {
+    header p {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 12px 70px 12px 24px;
+        padding: 12px 70px 12px 30px;
         gap: 24px;
         background: #2D2D2D;
         border-radius: 0px 0px 0px 20px;
-        margin-left: auto;
     }
     
-    .section h1 {
-        text-align: left;
-        margin-left: 5rem;
-        font-size: 60px;
-        width: 48%;
-        font-family: 'eurostile';
-        line-height: 130%;
-    }
-    
-    .section p {
-        text-align: left;
-        margin-top: 1.4rem;
-        margin-left: 5rem;
-        width: 35%;
-        letter-spacing: 0.02em;
-        line-height: 180%;
-    }
-    
-    .section a button {
-        margin-left: 1%;
-        margin-top: 30px;
-        padding-top: 5px;
-        width: 14%;
-        height: 54px;
-        border: 2px solid #FFFFFF;
-        font-family: 'bahnschrift';
-        background-color: transparent;
-        color: #FFFFFF;
-        font-size: 20px;
-        border-radius: 50px;
-        transition-duration: 0.4s;
-    }
-    
-    .section a button:hover {
-        color: #000000;
-        background-color: #FFFFFF;
-        cursor: pointer;
-        transition-duration: 0.4s;
-    }
-    
-    .weird-creatures-nft {
+    main{
         display: flex;
-        padding: 10px 0px 0px 10px;
-        margin-left: 5.6rem;
-        margin-top: -28px;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100vw;
+        max-height: 90vh;
+        align-items: center;
+    }
+
+    .hero-section{
+        height: 100%;
+        width: 50%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .title{
+        font-size: 3vh;
+        margin-bottom: 5%;
+    }
+    .para{
+        line-height: 180%
+    }
+    .image-section{
+        height: 100%;
+        width: 40%;
+    }
+    .img-hero{
+        width: 80%;
+    }
+    .btn-group{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        width: 55%;
+        gap: 5%;
+        margin-top: 7%;
+    }
+
+    .btn {
+        font-size: 1.1em;
+        border: 2px solid white;
+        border-radius: 50px;
+        background: transparent;
+        color: white;
+        width: 180px;
+        height: 50px;
+    }
+
+    .btn:hover{
+        background-color: white;
+        color: black;
+        transition: 0.2s;
+    }
+    footer{
+        display: none;
     }
     
-    .weird-creatures-nft img {
-        width: 8em;
+    @media screen and (max-width: 768px) {
+        .logo-container{
+            width: 65%;
+        }
+        header{
+            height: 15vh;
+        }
+        header img{
+            width: 45%;
+        }
+        header p{
+            display: none;
+        }
+        main{
+            flex-direction: column-reverse;
+        }
+        .image-section{
+            width: 90%;
+            margin-bottom: 40px;
+        }
+        .hero-section{
+            width: 95%;
+        }
+        .img-hero{
+            width: 40%;
+        }
+        .title{
+            display: none;
+        }
+        .para{
+            text-align: center;
+        }
+        .btn-group{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            z-index: 2;
+            
+        }
+        .btn{
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            border: 1px solid white;
+            font-size: 15px;
+        }
+        footer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 0px;
+            z-index: 1;
+        }
+        footer img{
+            width: 30%;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .image-section{
+            margin-bottom: 20px;
+        }
+       .img-hero{
+            width: 75%;
+       }
+       .para{
+            font-size: 11px;
+       }
     }
 </style>
 
