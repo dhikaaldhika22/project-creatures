@@ -31,10 +31,10 @@
                 <h1>GET $ONYX REWARDS</h1>
             </div>
             <div class="para">
-                <p>Stake your Creatures NFT to earn $ONYX daily.</p>
+                <p class="p1">Stake your Creatures NFT to earn $ONYX daily.</p>
                 <p>Every Weird Creatures with companion traits yield 4 $ONYX per day,</p>
                 <p>Weird Creatures without companion traits yield 2 $ONYX per day.</p></br>
-                <p>Stake as much as possible! Rewards awaits you!</p>
+                <p class="p1">Stake as much as possible! Rewards awaits you!</p>
             </div>
             <div class="btn-group">
                 <a href="../stake/index.html"><button class="btn">STAKE NOW</button></a>
@@ -90,13 +90,9 @@
         width: 100%;
         height: 20vh;
     }
+
     .logo-container{
         width: 20%;
-        display: flex;
-        justify-content: end;
-    }
-    .data-container{
-        width: 15%;
         display: flex;
         justify-content: end;
     }
@@ -135,7 +131,7 @@
         flex-direction: row;
         justify-content: center;
         max-width: 100vw;
-        max-height: 90vh;
+        min-height: 60vh;
         align-items: center;
     }
 
@@ -145,7 +141,6 @@
         text-align: left;
         display: flex;
         flex-direction: column;
-        justify-content: left;
     }
     .title{
         font-size: 3vh;
@@ -173,7 +168,7 @@
     }
 
     .btn {
-        font-size: 1.1em;
+        font-size: 1em;
         border: 2px solid white;
         border-radius: 50px;
         background: transparent;
@@ -188,119 +183,118 @@
         transition: 0.2s;
     }
     footer{
-        margin-top: 10vh;
-        width: 35vw;
-        height: 15vh;
+        width: 40%;
+        height: 20vh;
         display: flex;
         justify-content: center;
-        position: absolute;
-        bottom: 0px;
+        align-items: flex-end;
         overflow: hidden;
+        gap: 10px;
     }
     footer img{
-        height: 100%;
+        height: 90%;
     }
-    
-    @media screen and (max-width: 1023px) {
+
+    @media screen and (max-width: 992px){
         .logo-container{
             width: 68%;
-        }
-        .wallet-container{
-            width: 25%;
-        }
-        .wallet{
-            gap: 6px;
-        }
-        header{
-            height: 15vh;
         }
         header img{
             width: 55%;
         }
+        .wallet-container{
+            width: 25%;
+        }
         main{
             flex-direction: column-reverse;
         }
-        .image-section{
-            width: 90%;
-            margin-bottom: 40px;
-        }
         .hero-section{
-            width: 95%;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        .title{
+            text-align: center;
+            font-size: 2vh;
+        }
+        .para{
+            text-align: center;
+        }
+        .image-section{
+            width: 98%;
+            padding-left: 2%;
+            padding-bottom: 5%;
         }
         .img-hero{
-            width: 40%;
+            width: 50%;
+        }
+        .btn-group{
+            width: 100vw;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+        }
+        .btn{
+            font-size: 15px;
+        }
+        footer{
+            width: 100%;
+            gap: 0px;
+        }
+        
+    }
+
+    @media screen and (max-width:425px){
+        .garis{
+            width: 6px;
+        }
+        .wallet {
+            font-size: 10px;
+        }
+        .img-hero{
+            width: 60%
+        }
+        .hero-section{
+            width: 100vw;
         }
         .title{
             display: none;
         }
         .para{
-            text-align: center;
+            margin-top: 20px;
+            font-size: 11px;
+        }
+        .p1{
+            font-weight: 900;
+            font-size: 10px;
         }
         .btn-group{
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            row-gap: 15px;
-            z-index: 2;
-            
+            width: 100vw;
         }
         .btn{
-            width: 100%;
-            height: 100%;
-            padding: 20px;
-            border: 1px solid white;
-            font-size: 15px;
-        }
-        footer{
-            width: 100%;
-            height: 22vh;
-            display: flex;
-            justify-content: center;
-            position: absolute;
-            bottom: 0px;
-            z-index: 1;
-            
-        }
-        footer img{
-            width: 30%;
+            width: fit-content;
+            padding: 0 25px;
         }
     }
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-height: 500px){
         .logo-container{
-            width: 68%;
+            width: 58.5%;
         }
-        .wallet-container{
-            width: 25%;
-            justify-content: end;
+        header img{
+            width: 30%;
         }
-        .wallet{
-            width: 100%;
-            display: flex;
-            justify-content: end;
-            font-size: 10px;
+        .img-hero{
+            width: 35%;
         }
-        .garis{
-            width: 5px;
+        .title{
+            display: none;
         }
-        .image-section{
-            margin-bottom: 20px;
+        footer{
+            margin-top: 30px;
+            height: 40vh;
         }
-       .img-hero{
-            width: 60%;
-       }
-       .para{
-            font-size: 11px;
-       }
-       .btn-group{
-            row-gap: 17px;
-       }
-       .btn{
-            padding: 10px;
-       }
-       footer{
-            height: 18vh;
-       }
     }
    
 </style>
