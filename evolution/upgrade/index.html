@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Creatures | Upgrade</title>
+    <script src="https://kit.fontawesome.com/35ff2c25d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar  -->
+        <div class="header">
+            <div class="data">
+                <p>$ONYX: 55</p>
+                <p>STAKED: 15</p>
+            </div>
+            <div class="logo_container">
+                <img class="logo" src="../../assets/img/logo.png" alt="logo">
+            </div>
+            <div class="wallet-container">
+                <button href="#" class="wallet" onclick="window.location='../labs/'">
+                    <i class="fa-solid fa-wallet"></i>CONNECT
+                    <hr class="garis">
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <p style="color: #FFD217; padding-left: 13rem; padding-right: 13rem; padding-top: 0.5rem; font-family: 'bahnschrift';">Upgrade to Super Creatures by burning your Weird Creatures NFT + $ONYX. You will receive Creatures Vial to Redeem for Super Creatures.<br>You can also receive Creatures Vial with $ONYX (No need to burn Weird Creatures. Just pay with $ONYX).
+                <br>1 Creatures Vial = 1 Random Super Creatures
+            </p>
+            <h1 style="color: #FF3838; padding-top: 3rem;">CHOOSE BETWEEN THE 3 OPTIONS BELOW: </h1>
+            <H6 style="color: white; font-family: 'bahnschrift'; font-size: 16px; padding-top: 0.5rem; font-weight: 300;">(MAKE SURE YOU HAVE ALL THE REQUIREMENT NEEDS BEFORE CHOOSING ONE OF THE OPTION BELOW)</H6>
+
+            <div class="cards">
+                <div class="card1">
+                    <p style="padding-top: 15%;">BURN</p>
+                    <p>2 WEIRD CREATURES (COMPANION TRAITS)</p>
+                    <p>+</p>
+                    <p>20 $ONYX</p>
+                    <a href=""><button>CONFIRM</button></a>
+                </div>
+
+                <div class="card2">
+                    <p style="padding-top: 15%;">BURN</p>
+                    <p>3 WEIRD CREATURES (COMPANION TRAITS)</p>
+                    <p>+</p>
+                    <p>30 $ONYX</p>
+                    <a href=""><button>CONFIRM</button></a>
+                </div>
+
+                <div class="card3">
+                    <p style="padding-top: 15%;">MINT</p>
+                    <p>PAY 150 &ONYX</p>
+                    <a href=""><button style="margin-top: 24%;">CONFIRM</button></a>
+                </div>
+            </div>
+        </div>
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Work+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    @font-face {
+        font-family: 'eurostile', sans-serif;
+        src: url(../../assets/fonts/../fonts/EurostileExtended.ttf);
+        font-weight: normal;
+    }
+    
+    @font-face {
+        font-family: 'turismo';
+        src: url(../../assets/fonts/TurismoCF-Medium.otf);
+        font-weight: medium;
+    }
+    
+    @font-face {
+        font-family: 'bahnschrift';
+        src: url(../../assets/fonts/BAHNSCHRIFT.TTF);
+    }
+    
+    .container {
+        background-color: #0F0F0F;
+        max-width: 100vw;
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    
+    .header {
+        max-width: 100vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .data {
+        height: 40%;
+        width: 20%;
+        display: flex;
+        background-color: #1A1A1A;
+        color: white;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+        border-radius: 0px 0px 20px 0px;
+    }
+    
+    .logo_container {
+        width: 30%;
+    }
+    
+    .wallet-container {
+        width: 11%;
+        display: flex;
+        justify-content: end;
+    }
+    
+    .wallet {
+        background-color: #1a1a1a;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        height: 6vh;
+        border-radius: 0px 0px 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 12px;
+        border: none;
+        overflow: hidden;
+        font-size: 1.5vh;
+    }
+    
+    .garis {
+        color: white;
+        border: 1px white solid;
+        width: 30%;
+        background-color: white;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100vw;
+        max-height: 90vh;
+        align-items: center;
+    }
+    
+    .logo {
+        width: 40%;
+        margin-right: 30%;
+    }
+    
+    .main {
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 2%;
+        margin-top: 2%;
+    }
+    
+    .content h1 {
+        font-family: 'turismo';
+    }
+    
+    .cards {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        margin-top: 5%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    
+    .card1 {
+        width: 30%;
+        height: 390px;
+        color: white;
+        background-image: url(../../assets/img/card-upgrade.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 5%;
+    }
+    
+    .card2 {
+        width: 30%;
+        height: 390px;
+        color: white;
+        background-image: url(../../assets/img/card-upgrade.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 5%;
+    }
+    
+    .card3 {
+        width: 30%;
+        height: 390px;
+        color: white;
+        background-image: url(../../assets/img/card-upgrade.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .cards button {
+        width: 45%;
+        height: 48px;
+        border: 1px solid;
+        border-radius: 100px;
+        background-color: white;
+        font-weight: bold;
+        margin-top: 15%;
+        cursor: pointer;
+        font-family: 'bahnschrift';
+        font-size: 20px;
+    }
+</style>
+
+</html>

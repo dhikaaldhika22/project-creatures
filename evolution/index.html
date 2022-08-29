@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Creatures | Evolution</title>
+    <script src="https://kit.fontawesome.com/35ff2c25d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar  -->
+        <div class="header">
+            <div class="data">
+                <p>$ONYX: 55</p>
+                <p>STAKED: 15</p>
+            </div>
+            <div class="logo_container">
+                <img class="logo" src="../assets/img/logo.png" alt="logo">
+            </div>
+            <div class="wallet-container">
+                <button href="#" class="wallet" onclick="window.location='../labs/'">
+                    <i class="fa-solid fa-wallet"></i>CONNECT
+                    <hr class="garis">
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="upgrade" onclick="window.location='upgrade/index.html'">
+                <img src="../assets/img/icon-upgrade.png" style="width:62px; height: 82px; padding-top: 10%;" alt="">
+                <p style="font-size: 40px; color: #868c86; padding-top: 10%; font-family: 'turismo';">UPGRADE</p>
+                <p style="font-size: 14px; font-weight: bold; padding-top: 15%;">Upgrade Your Weird Creatures to Super Creatures</p>
+                <p style="font-size: 14px; padding-top: 6%">Super Creatures are a new version of the original<br>Weird Cretures art, with completely new & better looks!<br> They also generate more ONYX</p>
+            </div>
+
+            <div class="reveal" onclick="window.location='reveal/index.html'">
+                <img src="../assets/img/icon-reveal.png" style="width:28px; height: 82px; padding-top: 10%;" alt=" ">
+                <p style="font-size: 40px; color: #868c86; padding-top: 10%; font-family: 'turismo', sans-serif;">REVEAL</p>
+                <P style="font-size: 14px; font-weight: bold; padding-top: 15%; ">Reveal Your Creatures Vial to Redeem Super Creatures</P>
+                <p style="font-size: 14px; padding-top: 6% ">Creatures Vials are used to redeem Super Creatures.<br>1 Creatures Vials = 1 Random Super Creatures.<br>Burn ONYX as much as you want to get higher chance of RARES!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Work+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    @font-face {
+        font-family: 'eurostile', sans-serif;
+        src: url(../assets/fonts/EurostileExtended.ttf);
+        font-weight: normal;
+    }
+    
+    @font-face {
+        font-family: 'turismo';
+        src: url(../assets/fonts/TurismoCF-Medium.otf);
+        font-weight: medium;
+    }
+    
+    .container {
+        background-image: url(../assets/img/background-screen-evolutions.png);
+        max-width: 100vw;
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    
+    .header {
+        max-width: 100vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .data {
+        height: 40%;
+        width: 20%;
+        display: flex;
+        background-color: #1A1A1A;
+        color: white;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+        border-radius: 0px 0px 20px 0px;
+    }
+    
+    .logo_container {
+        width: 30%;
+    }
+    
+    .wallet-container {
+        width: 11%;
+        display: flex;
+        justify-content: end;
+    }
+    
+    .wallet {
+        background-color: #1a1a1a;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        height: 6vh;
+        border-radius: 0px 0px 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 12px;
+        border: none;
+        overflow: hidden;
+        font-size: 1.5vh;
+    }
+    
+    .garis {
+        color: white;
+        border: 1px white solid;
+        width: 30%;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100vw;
+        max-height: 90vh;
+        align-items: center;
+    }
+    
+    .logo {
+        width: 40%;
+        margin-right: 30%;
+    }
+    
+    .main {
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 2%;
+        margin-top: 2%;
+    }
+    
+    .content {
+        display: flex;
+        margin-left: 8%;
+        margin-top: 3%;
+        margin-right: 8%;
+        align-items: center;
+    }
+    
+    .content .upgrade {
+        width: 40%;
+        height: 450px;
+        margin-right: 15%;
+        background-color: black;
+        border-radius: 32px;
+        padding: 20px 2em 20px 2em;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    
+    .content .upgrade:hover {
+        background: rgba(0, 0, 0, 0.65);
+        transition: 0.4s;
+    }
+    
+    .content .reveal {
+        width: 40%;
+        height: 450px;
+        background-color: black;
+        border-radius: 32px;
+        padding: 20px 2em 20px 2em;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    
+    .content .reveal:hover {
+        transition: 0.4s;
+        background: rgba(0, 0, 0, 0.65);
+    }
+    
+    .content .reveal p {
+        color: white;
+        font-size: 14px;
+    }
+    
+    .content .upgrade p {
+        color: white;
+    }
+</style>
+
+</html>

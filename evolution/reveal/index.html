@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Creatures | Reveal</title>
+    <script src="https://kit.fontawesome.com/35ff2c25d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Navbar  -->
+        <div class="header">
+            <div class="data">
+                <p>$ONYX: 55</p>
+                <p>STAKED: 15</p>
+            </div>
+            <div class="logo_container">
+                <img class="logo" src="../../assets/img/logo.png" alt="logo">
+            </div>
+            <div class="wallet-container">
+                <button href="#" class="wallet" onclick="window.location='../labs/'">
+                <i class="fa-solid fa-wallet"></i>CONNECT
+                <hr class="garis">
+            </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <p style="width: 70%; margin-top: 13%;">Reveal Your Creatures Vial Redeem For Super Creatures <br> 1 Creatures Vial = 1 Random Super Creatures</p>
+
+            <!-- <img src="../../assets/img/thumbnail.png" style="width: 25%; padding-left: 2.5rem;" alt=""> -->
+            <video width="25%" style="padding-left: 2.5rem;" loop autoplay muted>
+                <source src="../../assets/video/CG_x264.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            <div class="right" style="margin-top: 10%; padding-left: 1rem;">
+                <img src="../../assets/img/robo.png" style="width: 40%;" alt="">
+                <p>Burn Any Amount of $ONYX to Get Higher Chance of Rares</p>
+                <form action="">
+                    <input type="text" placeholder="Enter the amount here..">
+                </form>
+            </div>
+        </div>
+        <a href=""><button class="btn-reveal">REVEAL</button></a>
+    </div>
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Work+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    @font-face {
+        font-family: 'eurostile', sans-serif;
+        src: url(../assets/fonts/EurostileExtended.ttf);
+        font-weight: normal;
+    }
+    
+    @font-face {
+        font-family: 'turismo';
+        src: url(../assets/fonts/TurismoCF-Medium.otf);
+        font-weight: medium;
+    }
+    
+    @font-face {
+        font-family: 'bahnschrift';
+        src: url(../../assets/fonts/BAHNSCHRIFT.TTF);
+    }
+    
+    .container {
+        background-color: #0F0F0F;
+        max-width: 100vw;
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    
+    .header {
+        max-width: 100vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .data {
+        height: 40%;
+        width: 20%;
+        display: flex;
+        background-color: #1A1A1A;
+        color: white;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+        border-radius: 0px 0px 20px 0px;
+    }
+    
+    .logo_container {
+        width: 30%;
+    }
+    
+    .wallet-container {
+        width: 11%;
+        display: flex;
+        justify-content: end;
+    }
+    
+    .wallet {
+        background-color: #1a1a1a;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        height: 6vh;
+        border-radius: 0px 0px 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 12px;
+        border: none;
+        overflow: hidden;
+        font-size: 1.5vh;
+    }
+    
+    .garis {
+        color: white;
+        border: 1px white solid;
+        width: 30%;
+        background-color: white;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100vw;
+        max-height: 90vh;
+        align-items: center;
+    }
+    
+    .logo {
+        width: 40%;
+        margin-right: 30%;
+    }
+    
+    .main {
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 2%;
+        margin-top: 2%;
+    }
+    
+    .content {
+        display: flex;
+        align-content: center;
+        margin-top: 3%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        color: #FFD217;
+    }
+    
+    .container .btn-reveal {
+        width: 10%;
+        height: 48px;
+        border: 4px solid #0F0F0F;
+        outline: 2px solid #FFD217;
+        border-radius: 100px;
+        margin-top: 3%;
+        background: #FFD217;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    
+    .right input {
+        background-color: transparent;
+        border: 2px solid white;
+        margin-top: 5%;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        width: 40%;
+        height: 56px;
+    }
+</style>
+
+</html>
