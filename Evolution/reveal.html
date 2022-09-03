@@ -28,26 +28,23 @@
            </div>
 
            <main>
-            <div class="card-container" onclick="window.location='upgrade.html'">
-                <img src="../assets/img/fireico.png" alt="" />
-                <h1>UPGARDE</h1>
-                <span>
-                    <strong>Upgrade Your Weird Creatures to Super Creatures</strong>
-                    Super Creatures are a new version of the original
-                    Weird Creatures art, with completely new & better looks!
-                    They also generate more ONYX.
-                </span>
-            </div>
-            <div class="card-container" onclick="window.location='reveal.html'">
-                <img src="../assets/img/ICON REVEAL 1.png" alt="" />
-                <h1>REVEAL</h1>
-                <span>
-                    <strong>Your Creatures Vial to Redeem Super Creatures</strong>
-                    Creatures Vials are used to redeem Super Creatures.
-                    1 Creatures Vial = 1 Random Super Creatures.
-                    Burn ONYX as much as you want to get higher chance of RARES!
-                </span>
-            </div>
+              <div class="para1">
+               <p>Reveal Your Creatures Vial to Redeem For Super Creatures 1 </p>
+               <p>Creatures Vial = 1 Random Super Creatures</p>
+              </div>
+              <div class="content-container">
+               <img src="../assets/img/content.png" alt="">
+               <button>REVEAL</button>
+              </div>
+              <div class="amount-container">
+               <div class="img-container">
+                    <img src="../assets/img/IMG 2 1.png" alt="">
+                    <img src="../assets/img/IMG 1 1.png" alt="">
+                    <img src="../assets/img/IMG 3 1.png" alt="">
+               </div>
+               <p>Burn Any Amount of $ONYX to Get Higher Chance of Rares</p>
+               <input type="text" placeholder="Enter the amount here..." />
+              </div>
            </main>
      </div>
 </body>
@@ -75,7 +72,7 @@
      }
      
      .container {
-         background-image: url(../assets/img/BG-EVOLUTION.svg);
+         background: #0f0f0f;
          max-width: 100vw;
          min-height: 100vh;
          background-size: cover;
@@ -140,38 +137,56 @@
          justify-content: center;
          max-width: 100vw;
          min-height: 90vh;
+         justify-content: space-evenly;
          align-items: center;
-         gap: 20%;
+         
      }
      
      .logo {
          width: 40%;
      }
-
-     .card-container{
-        background: rgba(0, 0, 0, 0.65);
-        color: #ffffff;
-        border-radius: 32px;
-        width: 30%;
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 10%;
-        padding: 2%;
-        cursor: pointer;
+     .para1{
+          color: #FFD217;
+          margin-top: 6%;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
      }
-
-     .card-container h1{
-        font-family: 'turismo', sans-serif;
-        color: #808080;
-        font-weight: 200;
-    }
-    
-    .card-container span{
-         font-family: 'turismo', sans-serif;
-
+     .content-container{
+          display: flex;
+          height: 60%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 50px;
+     }
+     .amount-container{
+          color: #FFD217;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+          gap: 20px;
+     }
+     .amount-container input{
+          border: 1px solid white;
+          background-color: transparent;
+          color: white;
+          height: 46px;
+          padding: 10px 20px;
+     }
+     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+     color: white;
+     opacity: 1; /* Firefox */
+     }
+     .content-container button{
+          width: 202px;
+          height: 60px;
+          background-color: #FFD217;
+          color: white;
+          border: 5px solid black;
+          outline: 1px solid #FFD217;
+          border-radius: 60px;
      }
 
      @media screen and (max-width: 1023px) {
@@ -195,38 +210,13 @@
         main{
             flex-wrap: wrap;
             gap: 20px;
-        }
-        .card-container{
-            width: 90%;
-            height: 45vh;
-        }
-        .card-container h1{
-            font-size: 1.2em;
-        }
-        .card-container span{
-            font-size: 12px;
-        }
-
-        
+        }        
     }
     
     @media screen and (max-width: 992px) {
         .main {
             display: none;
         }
-        .swiper {
-            display: block;
-            width: 100vw;
-            height: 85vh;
-            background-color: transparent;
-            margin-top: -12%;
-        }
-
-        .swiper-slide {
-            width: 80vw;
-            background-color: transparent;
-        }
-
         .header {
             justify-content: space-between;
         }
@@ -260,10 +250,6 @@
         }
     }
      @media screen and (max-width: 425px) {
-        .container{
-            background-image: url(../assets/img/evo-mobile.svg);
-        }
-
         .wallet-container{
             width: 25%;
         }
@@ -272,6 +258,33 @@
         }
         .garis{
             width: 5px;
+        }
+        .para1{
+          display: none;
+        }
+        .content-container img{
+          width: 80%;
+        }
+        .content-container button{
+          width: 80%;
+          height: 45px;
+          border-radius: 0px;
+          outline: none;
+          border: 1px solid #FFD217;
+          color: black;
+          font-size: 15px;
+          font-weight: 700;
+        }
+
+        .amount-container p{
+          font-size: 12px;
+        }
+        .amount-container input{
+          height: 20px;
+        }
+
+        ::placeholder{
+          font-size: 10px;
         }
         
     }
@@ -286,6 +299,7 @@
         .wallet{
             font-size: small;
         }
-    }
+    }     
+     
 </style>
 </html>

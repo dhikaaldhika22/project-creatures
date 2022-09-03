@@ -28,26 +28,42 @@
            </div>
 
            <main>
-            <div class="card-container" onclick="window.location='upgrade.html'">
-                <img src="../assets/img/fireico.png" alt="" />
-                <h1>UPGARDE</h1>
-                <span>
-                    <strong>Upgrade Your Weird Creatures to Super Creatures</strong>
-                    Super Creatures are a new version of the original
-                    Weird Creatures art, with completely new & better looks!
-                    They also generate more ONYX.
-                </span>
-            </div>
-            <div class="card-container" onclick="window.location='reveal.html'">
-                <img src="../assets/img/ICON REVEAL 1.png" alt="" />
-                <h1>REVEAL</h1>
-                <span>
-                    <strong>Your Creatures Vial to Redeem Super Creatures</strong>
-                    Creatures Vials are used to redeem Super Creatures.
-                    1 Creatures Vial = 1 Random Super Creatures.
-                    Burn ONYX as much as you want to get higher chance of RARES!
-                </span>
-            </div>
+               <div class="para1">
+                    <p>Upgrade to Super Creatures by burning your Weird Creatures NFT + $ONYX. You will receive Creatures Vial to redeem for Super Creatures</p>
+                    <p>You can also receive Creatures Vial with $ONYX (No need to burn Weird Creatures, just pay with $ONYX. </p>
+                    <p>1 Creatures Vial = 1 Random Super Creatures.</p>
+               </div>
+               <div class="para2">
+                    <h1>CHOOSE BETWEEN THE 3 OPTIONS BELOW:</h1>
+                    <h4>(MAKE SURE YOU HAVE ALL THE REQUIREMENTS NEEDED BEFORE CHOOSING ONE OF THE OPTIONS BELOW)</h4>
+               </div>
+               <div class="upgrade-container">
+                    <div class="upgrade">
+                         <div class="text">                              
+                              <p>BURN</p>
+                              <p>2 WEIRD CREATURES (COMPANION TRAITS)</p>
+                              <p>+</p>
+                              <p>20 $ONYX</p>
+                         </div>
+                         <button>CONFIRM</button>
+                    </div>
+                    <div class="upgrade">
+                         <div class="text">                              
+                              <p>BURN</p>
+                              <p>3 WEIRD CREATURES (COMPANION TRAITS)</p>
+                              <p>+</p>
+                              <p>30 $ONYX</p>
+                         </div>
+                         <button>CONFIRM</button>
+                    </div>
+                    <div class="upgrade">
+                         <div class="text">                              
+                              <p>MINT</p>
+                              <p> PAY 150 $ONYX</p>
+                         </div>
+                         <button>CONFIRM</button>
+                    </div>
+               </div>
            </main>
      </div>
 </body>
@@ -75,7 +91,7 @@
      }
      
      .container {
-         background-image: url(../assets/img/BG-EVOLUTION.svg);
+         background: #1E1E1E;
          max-width: 100vw;
          min-height: 100vh;
          background-size: cover;
@@ -136,10 +152,11 @@
          
      main{
          display: flex;
-         flex-direction: row;
+         flex-direction: column;
          justify-content: center;
          max-width: 100vw;
          min-height: 90vh;
+         justify-content: space-between;
          align-items: center;
          gap: 20%;
      }
@@ -147,33 +164,56 @@
      .logo {
          width: 40%;
      }
-
-     .card-container{
-        background: rgba(0, 0, 0, 0.65);
-        color: #ffffff;
-        border-radius: 32px;
-        width: 30%;
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 10%;
-        padding: 2%;
-        cursor: pointer;
+     .para1{
+          color: #FFD217;
+          margin-top: 6%;
      }
-
-     .card-container h1{
-        font-family: 'turismo', sans-serif;
-        color: #808080;
-        font-weight: 200;
-    }
-    
-    .card-container span{
-         font-family: 'turismo', sans-serif;
-
+     .para2 h1{
+          color: #FF3838;
+          font-family: 'turismo', sans-serif;
+          font-weight: 100;
      }
-
+     .para2 h4{
+          color: white;
+          font-weight: 100;
+     }
+     .upgrade-container{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          gap: 2%;
+     }
+     .upgrade{
+          height: 50vh;
+          width: 18%;
+          background-image: url(../assets/img/BOXUPGRADE.png);
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          justify-content: baseline;
+          align-items: center;
+          color: white;
+          background-repeat: no-repeat;
+          border-radius: 16px;
+          gap: 10%;
+          padding: 0 5%;
+     }
+     .text{
+          margin-top: 15%;
+          font-size: 12px;
+     }
+     .upgrade button{
+          border: 1px solid white;
+          background-color: white;
+          color: black;
+          width: 70%;
+          height: 48px;
+          border-radius: 50px;
+          font-size: 20px;
+          font-weight: bolder;
+     }
+     
      @media screen and (max-width: 1023px) {
         .card {
             height: 60%;
@@ -195,38 +235,13 @@
         main{
             flex-wrap: wrap;
             gap: 20px;
-        }
-        .card-container{
-            width: 90%;
-            height: 45vh;
-        }
-        .card-container h1{
-            font-size: 1.2em;
-        }
-        .card-container span{
-            font-size: 12px;
-        }
-
-        
+        }        
     }
     
     @media screen and (max-width: 992px) {
         .main {
             display: none;
         }
-        .swiper {
-            display: block;
-            width: 100vw;
-            height: 85vh;
-            background-color: transparent;
-            margin-top: -12%;
-        }
-
-        .swiper-slide {
-            width: 80vw;
-            background-color: transparent;
-        }
-
         .header {
             justify-content: space-between;
         }
@@ -260,10 +275,6 @@
         }
     }
      @media screen and (max-width: 425px) {
-        .container{
-            background-image: url(../assets/img/evo-mobile.svg);
-        }
-
         .wallet-container{
             width: 25%;
         }
@@ -273,7 +284,33 @@
         .garis{
             width: 5px;
         }
-        
+
+        .para1{
+          width: 90%;
+        }
+        .para2{
+          width: 90%;
+          }
+         .para2 h1{
+          font-size: 14px;
+        }
+        .upgrade-container{
+          width: 90%;
+          flex-wrap: wrap;
+          gap: 10px;
+          height: 120vh;
+          }
+        .upgrade{
+          width: 90%;
+          height: 20%;
+          z-index: 2;
+     }
+        .upgrade button{
+          position: relative;
+          bottom: -30px;
+          z-index: 1;
+        }
+           
     }
 
     @media screen and (max-height: 500px) {
@@ -286,6 +323,6 @@
         .wallet{
             font-size: small;
         }
-    }
+    }     
 </style>
 </html>
