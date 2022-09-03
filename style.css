@@ -1,0 +1,23 @@
+body{
+     display: flex;
+     justify-content: center;
+}
+.container{
+     max-width: 96vw;
+     min-height: 80vh;
+     background: black;
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     grid-auto-rows: min-content;
+     row-gap: 10px;
+     gap: 10px;
+}
+.item{
+     width: 96%;
+     border: 2px solid green;
+}
+
+.item img{
+     max-width: 100%;
+     object-fit: cover;
+}
