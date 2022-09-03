@@ -34,7 +34,7 @@
 
         <!-- DESKTOP MENU CARD //only appear on dekstop -->
         <div class="main">
-            <div class="card" onclick="window.location='../labs/index.html'">
+            <div class="card" onclick="location='../labs/index.html'">
                 <img src="../assets/img/background-labs.jpg" alt="" class="img_cover">
                 <p class="label">LABS</p>
             </div>
@@ -42,7 +42,7 @@
                 <img src="../assets/img/background-weird-creatures.jpg" alt="" class="img_cover">
                 <p class="label" style="font-size: 12px;">WEIRD CREATURES</p>
             </div>
-            <div class="card" onclick="">
+            <div class="card" onclick="location='../Evolution/index.html'"">
                 <img src="../assets/img/background-evolution.jpg" alt="" class="img_cover">
                 <p class="label">EVOLUTION</p>
             </div>
@@ -60,19 +60,19 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="card" onclick="window.location='../labs/index.html'">
+                    <div class="card" onclick="location='../labs/index.html'">
                         <img src="../assets/img/background-labs.jpg" alt="" class="img_cover">
                         <p class="label">Labs</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="card">
+                    <div class="card"  onclick="window.location='../labs/index.html'">
                         <img src="../assets/img/background-weird-creatures.jpg" alt="" class="img_cover">
                         <p class="label" style="font-size: 14px;">Weird Creature</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="card" onclick="">
+                    <div class="card" onclick="location='../Evolution/index.html'">
                         <img src="../assets/img/background-evolution.jpg" alt="" class="img_cover">
                         <p class="label">EVOLUTION</p>
                     </div>
@@ -197,7 +197,7 @@
     }
     
     .main {
-        width: 100vw;
+        max-width: 100vw;
         height: 70vh;
         display: flex;
         flex-direction: row;
@@ -230,6 +230,7 @@
         width: 100%;
         height: 100%;
         order: 2;
+        object-fit: fill;
     }
     
     .label {
@@ -261,8 +262,8 @@
     } 
     
     footer {
-        position: fixed;
-        bottom: 0px;
+        position: absolute;
+        bottom: 0%;
         width: 100%;
         height: 5vh;
         background-color: black;
@@ -396,10 +397,13 @@
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
+            margin-top: 50px;
         }
+
+
         .card:hover {
-            width: 60vw !important;
-            height: 60vh !important;
+            width: 97% !important;
+            height: 68% !important;
         }
         .label {
             background: transparent;
@@ -422,6 +426,10 @@
         }
         .garis{
             width: 5px;
+        }
+
+        footer{
+            bottom: 0px;
         }
         
     }
@@ -461,12 +469,12 @@
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
-        spaceBetween: 25,
+        spaceBetween: 30,
         slidesPerView: "auto",
         coverflowEffect: {
-          rotate: 10,
-          stretch: 10,
-          depth: 10,
+          rotate: 30,
+          stretch: 20,
+          depth: 20,
           modifier: 1,
           slideShadows: true
         },
