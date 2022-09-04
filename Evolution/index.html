@@ -31,22 +31,26 @@
             <div class="card-container" onclick="window.location='upgrade.html'">
                 <img src="../assets/img/fireico.png" alt="" />
                 <h1>UPGARDE</h1>
-                <span>
-                    <strong>Upgrade Your Weird Creatures to Super Creatures</strong>
-                    Super Creatures are a new version of the original
-                    Weird Creatures art, with completely new & better looks!
-                    They also generate more ONYX.
-                </span>
+                <div>
+                    <p class="sub"><strong>Upgrade Your Weird Creatures to Super Creatures</strong></p>
+                    <p class="txt">   
+                        Super Creatures are a new version of the original <br>
+                        Weird Creatures art, with completely new & better looks! <br>
+                        They also generate more ONYX.
+                    </p>
+                </div>
             </div>
             <div class="card-container" onclick="window.location='reveal.html'">
                 <img src="../assets/img/ICON REVEAL 1.png" alt="" />
                 <h1>REVEAL</h1>
-                <span class="txt">
-                    <strong>Your Creatures Vial to Redeem Super Creatures</strong>
-                    Creatures Vials are used to redeem Super Creatures.
-                    1 Creatures Vial = 1 Random Super Creatures.
-                    Burn ONYX as much as you want to get higher chance of RARES!
-                </span>
+                <div class="">
+                    <p class="sub"><strong>Your Creatures Vial to Redeem Super Creatures</strong></p>
+                    <p class="txt">
+                        Creatures Vials are used to redeem Super Creatures. <br>
+                        1 Creatures Vial = 1 Random Super Creatures. <br>
+                        Burn ONYX as much as you want to get higher chance of RARES!
+                    </p>    
+                </div>
             </div>
            </main>
      </div>
@@ -153,7 +157,7 @@
         color: #ffffff;
         border-radius: 32px;
         width: 30%;
-        height: 60vh;
+        height: 57vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -168,10 +172,20 @@
         color: #808080;
         font-weight: 200;
     }
+
+    .sub{
+        font-family: 'turismo', sans-serif;
+        font-size: 1em;
+        margin-bottom: 18px;
+        letter-spacing: 2%;
+        text-align: center;
+    }
     
     .txt{
         font-family: sans-serif;
-        font-size: 12px;
+        font-size: 1em;
+        font-weight: lighter;
+        text-align: center;
     }
 
      @media screen and (max-width: 1023px) {
@@ -272,6 +286,15 @@
         }
         .garis{
             width: 5px;
+        }
+        .card-container{
+            height: 270px;
+        }
+        .sub{
+            font-size: 12px;
+        }
+        .txt{
+            font-size: 10px;
         }
         
     }
