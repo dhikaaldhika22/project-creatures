@@ -46,7 +46,9 @@
                               <p class="desk">20 $ONYX</p>
                               <span class="mob">2 WEIRD CREATURES (COMPANION TRAITS) + 20 $ONYX</span>
                             </div>
-                            <button>CONFIRM</button>
+                            <div class="wrap-btn">
+                                <button>CONFIRM</button>
+                            </div>
                         </div>
                         <div class="upgrade">
                             <div class="text">                              
@@ -56,15 +58,18 @@
                                 <p class="desk">30 $ONYX</p>
                                 <span class="mob">3 WEIRD CREATURES (COMPANION TRAITS) + 30 $ONYX</span>
                          </div>
-                         <button>CONFIRM</button>
+                         <div class="wrap-btn">
+                             <button>CONFIRM</button>
+                         </div>
                     </div>
                     <div class="upgrade">
                          <div class="text">                              
                               <p>MINT</p>
                               <p> PAY 150 $ONYX</p>
-                              <div class="desk"><br><br></div>
                          </div>
-                         <button>CONFIRM</button>
+                         <div class="wrap-btn">
+                             <button>CONFIRM</button>
+                         </div>
                     </div>
                </div>
            </main>
@@ -195,7 +200,7 @@
           background-size: cover;
           display: flex;
           flex-direction: column;
-          justify-content: baseline;
+          justify-content: center;
           align-items: center;
           color: white;
           background-repeat: no-repeat;
@@ -204,8 +209,12 @@
           padding: 0 5%;
      }
      .text{
-          margin-top: 15%;
           font-size: 1em;
+          height: 50%;
+          padding-top: 10%;
+     }
+     .wrap-btn{
+        height: 50%;
      }
      .mob{
         display: none;
@@ -214,7 +223,7 @@
           border: 1px solid white;
           background-color: white;
           color: black;
-          width: 70%;
+          width: 140%;
           height: 48px;
           border-radius: 50px;
           font-size: 20px;
@@ -347,6 +356,12 @@
           padding: 12px 0px;
           font-size: 10px;
         }
+        .text{
+            margin-top: -5%;
+        }
+        .wrap-btn{
+            margin-top: -5%;
+        }
            
     }
 
@@ -359,6 +374,13 @@
         }
         .wallet{
             font-size: small;
+        }
+        .text{
+            font-size: 0.7em;
+        }
+        .wrap-btn button{
+            height: 30px;
+            font-size: 0.7em;
         }
     }     
 </style>
