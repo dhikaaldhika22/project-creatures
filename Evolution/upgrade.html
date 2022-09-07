@@ -141,7 +141,7 @@
          background-color: #1a1a1a;
          color: white;
          text-decoration: none;
-         width: 100%;
+         width: fit-content;
          height: 6vh;
          border-radius: 0px 0px 0px 20px;
          display: flex;
@@ -151,11 +151,12 @@
          border: none;
          overflow: hidden;
          font-size: 1.5vh;
+         padding: 10% 0% 10% 15%;
      }
      .garis{
          color: white;
          border: 1px white solid;
-         width: 30%;
+         width: 3vw;
      }
          
      main{
@@ -215,6 +216,8 @@
      }
      .wrap-btn{
         height: 50%;
+        display: flex;
+        justify-content: center;
      }
      .mob{
         display: none;
@@ -223,8 +226,8 @@
           border: 1px solid white;
           background-color: white;
           color: black;
-          width: 140%;
           height: 48px;
+          padding: 10% 15%;
           border-radius: 50px;
           font-size: 20px;
           font-weight: bolder;
@@ -282,23 +285,22 @@
             justify-content: end;
         }
         .wallet{
-            width: 100%;
-            display: flex;
-            justify-content: end;
+            width: fit-content;
+            font-size: 12px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
         }
         .garis{
             width: 25px;
         }
     }
      @media screen and (max-width: 425px) {
-        main{
-            min-height: 0;
-        }
+         main{
+             min-height: 0;
+            }
         .wallet-container{
             width: 25%;
-        }
-        .wallet{
-            font-size: 10px;
         }
         .garis{
             width: 5px;
@@ -362,7 +364,7 @@
         .wrap-btn{
             margin-top: -5%;
         }
-           
+        
     }
 
     @media screen and (max-height: 500px) {
@@ -373,7 +375,7 @@
             font-size: 10px;
         }
         .wallet{
-            font-size: small;
+           font-size: 10px
         }
         .text{
             font-size: 0.7em;
